@@ -1,0 +1,727 @@
+@import "./normalize.css";
+
+// general classes
+.header-wrapper {
+  max-width: 1290px;
+  margin: auto;
+}
+
+.divider {
+  height: 70px;
+}
+
+.spacer {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  margin-top: -140px;
+}
+
+//sections classes
+
+.header {
+  height: 110px;
+  margin-inline: 15px;
+}
+
+.main {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+
+  .banner {
+    height: 726px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+      height: 100%;
+      width: 100%;
+      max-width: 1290px;
+      position: absolute;
+    }
+
+    &__bg {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      background-color: #000;
+      opacity: 0.6;
+    }
+
+    &__img {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+
+      background-image: url("../assets/frying-pans_img.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &__wrapper {
+      max-width: 1290px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      z-index: 3;
+      padding: 200px 16px;
+
+      @media screen and (min-width: 768px) {
+        max-width: 50%;
+        align-items: start;
+        padding: 200px 24px;
+      }
+    }
+
+    &__title {
+      font-family: "Staatliches", sans-serif;
+      font-size: 50px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+
+      margin: 0 0 30px 0;
+      text-align: center;
+      color: #fff;
+
+      @media screen and (min-width: 768px) {
+        text-align: start;
+      }
+
+      @media screen and (min-width: 1240px) {
+        font-size: 90px;
+      }
+    }
+
+    &__list {
+      font-size: 17px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 30px 0;
+      padding: 0;
+
+      color: #fff;
+      opacity: 0.8;
+      list-style: none;
+
+      @media screen and (min-width: 768px) {
+        align-items: start;
+      }
+    }
+
+    .list__item {
+      margin: 0;
+    }
+
+    &__btn {
+      font-size: 23px;
+
+      align-self: start;
+      width: 180px;
+      height: 62px;
+      border: none;
+
+      background-color: #3f5f7f;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #2b4870;
+      }
+    }
+  }
+
+  .advantages {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -70px 0 70px;
+    z-index: 2;
+
+    &__wrapper {
+      max-width: 1290px;
+      width: 94%;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 35px;
+
+      color: #fff;
+
+      &:nth-child(even) {
+        background-color: #4b6e9b;
+      }
+
+      &:nth-child(odd) {
+        background-color: #3f5a7f;
+      }
+    }
+
+    &__icon {
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-family: "Staatliches", sans-serif;
+      font-weight: normal;
+      margin: 0 0 25px;
+    }
+
+    &__text {
+      opacity: 0.8;
+      line-height: 160%;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+    margin: 0 0 40px;
+
+    &__title {
+      font-size: 35px;
+      font-family: "Staatliches", sans-serif;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 15px;
+      color: #0c0d0c;
+    }
+
+    &__subtitle {
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 160%;
+      text-align: center;
+      margin: 0 0 30px;
+
+      color: #0a2117;
+
+      @media screen and (min-width: 768px) {
+        margin: 0 0 50px;
+      }
+    }
+
+    &__wrapper {
+      max-width: 1290px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px 35px;
+      background-color: #f2f7f6;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-family: "Staatliches", sans-serif;
+      margin: 0 0 16px;
+    }
+
+    &__text {
+      text-align: center;
+      margin: 0 0 30px;
+      line-height: 160%;
+    }
+
+    &__button {
+      font-size: 21px;
+      width: 145px;
+      height: 60px;
+      align-self: center;
+      background-color: #3f5f7f;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #2b4870;
+      }
+    }
+  }
+
+  .history {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 24px;
+    margin: 0 0 45px;
+    background-color: #000;
+
+    background-image: url("http://deaneandwhite.com/wp-content/uploads/2022/07/vegetables-background.svg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+
+    @media screen and (min-width: 1240px) {
+      height: 600px;
+    }
+
+    &__bg {
+      position: absolute;
+      top: 0;
+      z-index: 3;
+      opacity: 0.6;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+    }
+
+    &__wrapper {
+      max-width: 1290px;
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: #fff;
+    }
+
+    &__title {
+      font-size: 35px;
+      font-weight: normal;
+      font-family: "Staatliches", sans-serif;
+      margin: 15px 0;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 160%;
+      margin: 0 0 45px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+      font-weight: normal;
+      font-family: "Staatliches", sans-serif;
+      margin: 0 0 45px;
+    }
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+
+      @media screen and (min-width: 440px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+    }
+
+    .text-start {
+      text-align: start;
+    }
+
+    &__empty {
+      display: block;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__img {
+      border-radius: 12px;
+    }
+  }
+
+  .cookware {
+    padding-inline: 16px;
+    margin: 0 0 70px;
+    max-width: 1290px;
+    margin: auto;
+
+    &__title {
+      font-size: 35px;
+      font-family: "Staatliches", sans-serif;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 15px;
+      color: #0c0d0c;
+    }
+
+    &__text {
+      color: #0a2117;
+      text-align: center;
+      margin: 0 0 50px;
+    }
+
+    &__bg {
+      background-color: #000;
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__card {
+      position: relative;
+
+      &:hover {
+        .cookware__img {
+          filter: brightness(70%);
+        }
+      }
+    }
+
+    &__img {
+      width: 100%;
+      transition: filter 0.3s ease;
+    }
+
+    &__container {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 35px;
+      margin: 30px;
+      background-color: #fff;
+    }
+
+    &__cardtitle {
+      font-family: "Staatliches", sans-serif;
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      margin: 0;
+    }
+
+    &__cardtext {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .clients {
+    max-width: 1290px;
+    width: 90%;
+    margin: auto;
+
+    &__title {
+      font-family: "Staatliches", sans-serif;
+      font-size: 45px;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 15px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 35px;
+      background-color: #f2f7f6;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      filter: brightness(90%);
+    }
+
+    &__photo {
+      width: 80px;
+      height: 80px;
+      margin: 0 0 16px;
+    }
+
+    &__text {
+      color: #1e1e1e;
+      line-height: 160%;
+      margin: 0 0 40px;
+      text-align: center;
+    }
+
+    &__name {
+      font-family: "Staatliches", sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0 0 10px;
+      color: #0c0d0c;
+    }
+
+    &__link {
+      color: #3f5a7f;
+      margin: 0;
+    }
+  }
+
+  .subscribe {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    &__img {
+      position: absolute;
+      max-width: 1290px;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+      filter: brightness(40%);
+
+      background-image: url("http://deaneandwhite.com/wp-content/uploads/2023/08/m11774269043_1-scaled.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &__container {
+      max-width: 800px;
+      margin: auto;
+      padding: 70px 35px;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+    }
+
+    &__title {
+      font-family: "Staatliches", sans-serif;
+      font-size: 45px;
+      font-weight: normal;
+      margin: 0 0 24px;
+    }
+
+    &__text {
+      font-weight: normal;
+      line-height: 140%;
+      margin: 0 0 50px;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #fff;
+      padding: 15px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      height: 60px;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      text-align: center;
+      border-color: #e6f0ee;
+      outline: none;
+
+      &:focus {
+        border-color: #000;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    &__btn {
+      min-width: 150px;
+      height: 60px;
+      border: none;
+      color: #fff;
+      background-color: #3f5a7f;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #438cbd;
+      }
+    }
+  }
+}
+
+.footer {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-image: url("http://deaneandwhite.com/wp-content/uploads/2022/07/footer-vegetables-background.svg");
+    background-position-x: left;
+    background-size: cover;
+    filter: brightness(30%);
+  }
+
+  &__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 83px;
+    z-index: 4;
+    padding: 40px 24px;
+    margin: auto;
+
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    width: 182px;
+    height: 115px;
+  }
+
+  &__adress {
+    font-family: "Staatliches", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 160%;
+    max-width: 150px;
+    z-index: 4;
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+
+    @media screen and (min-width: 1000px) {
+      text-align: start;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #8ed1fc;
+    }
+  }
+
+  .mb-18 {
+    margin-bottom: 18px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1000px) {
+      text-align: start;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__markets {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__market {
+    cursor: pointer;
+  }
+
+  &__copyright {
+    font-size: 15px;
+    z-index: 4;
+    color: #ffffff99;
+    margin: 0 0 15px;
+  }
+}

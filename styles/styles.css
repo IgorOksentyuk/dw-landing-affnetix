@@ -1,0 +1,523 @@
+@import url(./normalize.css);
+.header-wrapper {
+  max-width: 1290px;
+  margin: auto; }
+
+.divider {
+  height: 70px; }
+
+.spacer {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  margin-top: -140px; }
+
+.header {
+  height: 110px;
+  margin-inline: 15px; }
+
+.main {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px; }
+  .main .banner {
+    height: 726px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main .banner__container {
+      height: 100%;
+      width: 100%;
+      max-width: 1290px;
+      position: absolute; }
+    .main .banner__bg {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      background-color: #000;
+      opacity: 0.6; }
+    .main .banner__img {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      background-image: url("../assets/frying-pans_img.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .main .banner__wrapper {
+      max-width: 1290px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      z-index: 3;
+      padding: 200px 16px; }
+      @media screen and (min-width: 768px) {
+        .main .banner__wrapper {
+          max-width: 50%;
+          align-items: start;
+          padding: 200px 24px; } }
+    .main .banner__title {
+      font-family: "Staatliches", sans-serif;
+      font-size: 50px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      margin: 0 0 30px 0;
+      text-align: center;
+      color: #fff; }
+      @media screen and (min-width: 768px) {
+        .main .banner__title {
+          text-align: start; } }
+      @media screen and (min-width: 1240px) {
+        .main .banner__title {
+          font-size: 90px; } }
+    .main .banner__list {
+      font-size: 17px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 30px 0;
+      padding: 0;
+      color: #fff;
+      opacity: 0.8;
+      list-style: none; }
+      @media screen and (min-width: 768px) {
+        .main .banner__list {
+          align-items: start; } }
+    .main .banner .list__item {
+      margin: 0; }
+    .main .banner__btn {
+      font-size: 23px;
+      align-self: start;
+      width: 180px;
+      height: 62px;
+      border: none;
+      background-color: #3f5f7f;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease; }
+      .main .banner__btn:hover {
+        background-color: #2b4870; }
+  .main .advantages {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -70px 0 70px;
+    z-index: 2; }
+    .main .advantages__wrapper {
+      max-width: 1290px;
+      width: 94%;
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 768px) {
+        .main .advantages__wrapper {
+          flex-direction: row; } }
+    .main .advantages__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 35px;
+      color: #fff; }
+      .main .advantages__card:nth-child(even) {
+        background-color: #4b6e9b; }
+      .main .advantages__card:nth-child(odd) {
+        background-color: #3f5a7f; }
+    .main .advantages__icon {
+      margin-bottom: 25px; }
+    .main .advantages__title {
+      font-size: 30px;
+      font-family: "Staatliches", sans-serif;
+      font-weight: normal;
+      margin: 0 0 25px; }
+    .main .advantages__text {
+      opacity: 0.8;
+      line-height: 160%;
+      text-align: center;
+      margin: 0; }
+  .main .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+    margin: 0 0 40px; }
+    .main .choose__title {
+      font-size: 35px;
+      font-family: "Staatliches", sans-serif;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 15px;
+      color: #0c0d0c; }
+    .main .choose__subtitle {
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 160%;
+      text-align: center;
+      margin: 0 0 30px;
+      color: #0a2117; }
+      @media screen and (min-width: 768px) {
+        .main .choose__subtitle {
+          margin: 0 0 50px; } }
+    .main .choose__wrapper {
+      max-width: 1290px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; }
+      @media screen and (min-width: 768px) {
+        .main .choose__wrapper {
+          flex-direction: row; } }
+    .main .choose__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px 35px;
+      background-color: #f2f7f6; }
+    .main .choose__img {
+      width: 100%; }
+    .main .choose__title {
+      font-size: 30px;
+      font-family: "Staatliches", sans-serif;
+      margin: 0 0 16px; }
+    .main .choose__text {
+      text-align: center;
+      margin: 0 0 30px;
+      line-height: 160%; }
+    .main .choose__button {
+      font-size: 21px;
+      width: 145px;
+      height: 60px;
+      align-self: center;
+      background-color: #3f5f7f;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s ease; }
+      .main .choose__button:hover {
+        background-color: #2b4870; }
+  .main .history {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 24px;
+    margin: 0 0 45px;
+    background-color: #000;
+    background-image: url("http://deaneandwhite.com/wp-content/uploads/2022/07/vegetables-background.svg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center; }
+    @media screen and (min-width: 1240px) {
+      .main .history {
+        height: 600px; } }
+    .main .history__bg {
+      position: absolute;
+      top: 0;
+      z-index: 3;
+      opacity: 0.6;
+      height: 100%;
+      width: 100%;
+      background-color: #000; }
+    .main .history__wrapper {
+      max-width: 1290px;
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: #fff; }
+    .main .history__title {
+      font-size: 35px;
+      font-weight: normal;
+      font-family: "Staatliches", sans-serif;
+      margin: 15px 0; }
+    .main .history__text {
+      font-size: 18px;
+      line-height: 160%;
+      margin: 0 0 45px; }
+    .main .history__subtitle {
+      font-size: 26px;
+      font-weight: normal;
+      font-family: "Staatliches", sans-serif;
+      margin: 0 0 45px; }
+    .main .history__container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px; }
+      @media screen and (min-width: 440px) {
+        .main .history__container {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media screen and (min-width: 768px) {
+        .main .history__container {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px; } }
+    .main .history .text-start {
+      text-align: start; }
+    .main .history__empty {
+      display: block; }
+      @media screen and (min-width: 768px) {
+        .main .history__empty {
+          display: none; } }
+    .main .history__img {
+      border-radius: 12px; }
+  .main .cookware {
+    padding-inline: 16px;
+    margin: 0 0 70px;
+    max-width: 1290px;
+    margin: auto; }
+    .main .cookware__title {
+      font-size: 35px;
+      font-family: "Staatliches", sans-serif;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 15px;
+      color: #0c0d0c; }
+    .main .cookware__text {
+      color: #0a2117;
+      text-align: center;
+      margin: 0 0 50px; }
+    .main .cookware__bg {
+      background-color: #000; }
+    .main .cookware__wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px; }
+      @media screen and (min-width: 768px) {
+        .main .cookware__wrapper {
+          grid-template-columns: repeat(2, 1fr); } }
+    .main .cookware__card {
+      position: relative; }
+      .main .cookware__card:hover .cookware__img {
+        filter: brightness(70%); }
+    .main .cookware__img {
+      width: 100%;
+      transition: filter 0.3s ease; }
+    .main .cookware__container {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 35px;
+      margin: 30px;
+      background-color: #fff; }
+    .main .cookware__cardtitle {
+      font-family: "Staatliches", sans-serif;
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      margin: 0; }
+    .main .cookware__cardtext {
+      margin: 0;
+      text-align: center; }
+  .main .clients {
+    max-width: 1290px;
+    width: 90%;
+    margin: auto; }
+    .main .clients__title {
+      font-family: "Staatliches", sans-serif;
+      font-size: 45px;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 15px; }
+    .main .clients__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      @media screen and (min-width: 768px) {
+        .main .clients__wrapper {
+          flex-direction: row; } }
+    .main .clients__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 35px;
+      background-color: #f2f7f6; }
+    .main .clients__icon {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      filter: brightness(90%); }
+    .main .clients__photo {
+      width: 80px;
+      height: 80px;
+      margin: 0 0 16px; }
+    .main .clients__text {
+      color: #1e1e1e;
+      line-height: 160%;
+      margin: 0 0 40px;
+      text-align: center; }
+    .main .clients__name {
+      font-family: "Staatliches", sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0 0 10px;
+      color: #0c0d0c; }
+    .main .clients__link {
+      color: #3f5a7f;
+      margin: 0; }
+  .main .subscribe {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+    .main .subscribe__img {
+      position: absolute;
+      max-width: 1290px;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+      filter: brightness(40%);
+      background-image: url("http://deaneandwhite.com/wp-content/uploads/2023/08/m11774269043_1-scaled.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .main .subscribe__container {
+      max-width: 800px;
+      margin: auto;
+      padding: 70px 35px;
+      z-index: 2;
+      text-align: center;
+      color: #fff; }
+    .main .subscribe__title {
+      font-family: "Staatliches", sans-serif;
+      font-size: 45px;
+      font-weight: normal;
+      margin: 0 0 24px; }
+    .main .subscribe__text {
+      font-weight: normal;
+      line-height: 140%;
+      margin: 0 0 50px; }
+    .main .subscribe__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #fff;
+      padding: 15px; }
+      @media screen and (min-width: 768px) {
+        .main .subscribe__form {
+          flex-direction: row;
+          justify-content: space-between; } }
+    .main .subscribe__input {
+      width: 100%;
+      height: 60px;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      text-align: center;
+      border-color: #e6f0ee;
+      outline: none; }
+      .main .subscribe__input:focus {
+        border-color: #000; }
+      @media screen and (min-width: 768px) {
+        .main .subscribe__input {
+          width: 50%; } }
+    .main .subscribe__btn {
+      min-width: 150px;
+      height: 60px;
+      border: none;
+      color: #fff;
+      background-color: #3f5a7f;
+      cursor: pointer;
+      transition: background-color 0.2s ease; }
+      .main .subscribe__btn:hover {
+        background-color: #438cbd; }
+
+.footer {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  .footer__bg {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-image: url("http://deaneandwhite.com/wp-content/uploads/2022/07/footer-vegetables-background.svg");
+    background-position-x: left;
+    background-size: cover;
+    filter: brightness(30%); }
+  .footer__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 83px;
+    z-index: 4;
+    padding: 40px 24px;
+    margin: auto; }
+    @media screen and (min-width: 1000px) {
+      .footer__wrapper {
+        flex-direction: row; } }
+  .footer__img {
+    width: 182px;
+    height: 115px; }
+  .footer__adress {
+    font-family: "Staatliches", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 160%;
+    max-width: 150px;
+    z-index: 4;
+    margin: 0; }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center; }
+    @media screen and (min-width: 1000px) {
+      .footer__container {
+        text-align: start; } }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .footer__link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease; }
+    .footer__link:hover {
+      color: #8ed1fc; }
+  .footer .mb-18 {
+    margin-bottom: 18px; }
+  .footer__info {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 1000px) {
+      .footer__info {
+        text-align: start; } }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px; }
+  .footer__markets {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; }
+  .footer__market {
+    cursor: pointer; }
+  .footer__copyright {
+    font-size: 15px;
+    z-index: 4;
+    color: #ffffff99;
+    margin: 0 0 15px; }
